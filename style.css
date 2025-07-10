@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.container{
+  max-width: 1200px;
+  width: 100%;
+}
 .target{
   border: 1px solid beige;
   width: 300px;
@@ -60,9 +63,11 @@
 }
 
 .formulario{
-  margin-left: 20px;
-  vertical-align: top;
-  margin-top: 30px;
+  margin: 0 auto;
+  width: 300px;
+  border: beige 1px solid;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .formulario__description{
@@ -97,8 +102,8 @@
 
 .Tarea{
   background-color: lightpink;
-  width: 300px;
-  margin-left: 20px;
+  width: 280px;
+  margin: 10px auto;
   padding: 20px;
   border-radius: 20px;
 
@@ -108,6 +113,7 @@
   color: aliceblue;
   margin-bottom: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 .Tarea__item{
@@ -125,6 +131,7 @@
   background-color: gold;
   border: none;
   font-weight: bold;
+  margin-left: 80px;
 }
 
 .Tarea__item--primary{
@@ -133,21 +140,21 @@
 
 .galeria{
   background-color: lightskyblue;
-  width: 800px;
+  width: 700px;
   margin: 20px auto;
   border-radius: 20px;
   padding: 10px;
-
 }
 
 .galeria__titulo{
-  margin-bottom: 10px;
   font-weight: bold;
   color: aliceblue;
+  text-align: center;
 }
 
 .galeria__imagen{
-  margin: 20px auto;
+  margin-left: 20px;
+  margin-top: 5px;
   border-radius: 30px;
 }
 
@@ -171,4 +178,24 @@
 
 .alerta__mensaje{
   font-weight: bold;
+}
+
+.tabla{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.tabla__fila{
+  text-align: left;
+  padding: 10px;
+}
+
+.tabla__titulo{
+  background-color: lightgray;
+  border: 1px solid rgb(112, 112, 112);
+}
+
+.tabla__item{
+  padding: 10px;
+  border: 1px solid rgb(112, 112, 112);
 }
