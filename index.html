@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bem</title>
+</head>
+
+<body>
+  <!-- menu de navegacion -->
+  <nav class="menu">
+    <a href="inicio" class="menu__item menu__item--primary">Home</a>
+    <a href="nosotros" class="menu__item">About us</a>
+    <a href="servicios" class="menu__item">Products</a>
+    <a href="contacto" class="menu__item">Contac us</a>
+  </nav>
+  <!-- Tarjeta de un producto  -->
+  <div class="target">
+    <img src="https://picsum.photos/200" alt="imagen1" class="target__imagen">
+    <h2 class="target__nombre">Nombre del producto</h2>
+    <p class="target__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis
+      fugiat odit.</p>
+    <div class="linea">
+      <p class="linea__precio">$99999</p>
+      <button class="linea__boton--hover">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <!-- formulario -->
+  <form class="formulario">
+    <h2 class="formulario__description">Suscribete y recibe ofertas nuevas</h2>
+    <div class="formulario_item">
+      <label for="name" class="formulario__label">Nombre:</label>
+      <input type="text" class="formulario__input" id="name">
+    </div>
+    <div class="formulario_item">
+      <label for="mail" class="formulario__label">Correo Electronico:</label>
+      <input type="email" id="mail" class="formulario__input">
+    </div>
+    <button class="formulario__boton--active">Enviar</button>
+  </form>
+
+  <!-- lista de tareas -->
+  <div class="Tarea">
+    <h2 class="Tarea__titulo">Lista de tareas</h2>
+    <div class="Tarea__item">
+      <input type="checkbox" class="Tarea__input" id="name">
+      <label for="name" class="Tarea__label">Tarea 1</label>
+    </div>
+    <div class="Tarea__item Tarea__item--primary">
+      <input type="checkbox" class="Tarea__input" id="name">
+      <label for="name" class="Tarea__label">Tarea 2</label>
+    </div>
+    <div class="Tarea__item">
+      <input type="checkbox" class="Tarea__input" id="name">
+      <label for="name" class="Tarea__label">Tarea 3</label>
+    </div>
+    <button class="Tarea__boton">Completado</button>
+  </div>
+  <!-- galeria de imagenes -->
+  <div class="galeria">
+    <h2 class="galeria__titulo">Galeria de imagenes</h2>
+    <img src="https://picsum.photos/200" class="galeria__imagen">
+    <img src="https://picsum.photos/200" class="galeria__imagen">
+    <img src="https://picsum.photos/200" class="galeria__imagen">
+  </div>
+
+  <div class="alerta">
+    <div class="mensaje">
+      <h3 class="alerta__titulo">¡Alerta!</h3>
+      <p class="alerta__mensaje">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+  </div>
+
+  <!-- componente de tabla de datos -->
+  <table class="tabla">
+    <tr class="tabla__fila">
+      <th class="tabla__item tabla__titulo">Nombre</th>
+      <th class="tabla__item tabla__titulo">Edad</th>
+      <th class="tabla__item tabla__titulo">País</th>
+    </tr>
+    <tr class="tabla__fila">
+      <td class="tabla__item">Juan</td>
+      <td class="tabla__item">25</td>
+      <td class="tabla__item">España</td>
+    </tr>
+    <tr class="tabla__fila">
+      <td class="tabla__item">María</td>
+      <td class="tabla__item">30</td>
+      <td class="tabla__item">México</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.target{
+  border: 1px solid beige;
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: floralwhite;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.target__imagen{
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.target__descripcion{
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.linea__precio{
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.linea__boton--hover{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: brown;
+  color: white;
+}
+
+.linea__boton--hover:hover{
+  background-color: aliceblue;
+  color: brown;
+}
+
+.menu{
+  background-color: black;
+  padding: 10px;
+}
+
+.menu__item{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 100px;
+}
+
+.menu__item--primary{
+  color: lightgray;
+  border-bottom: 1px solid;
+}
+
+.formulario{
+  margin-left: 20px;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.formulario__description{
+  font-size: 30px;
+  font-style: oblique;
+  filter: drop-shadow(1px 1px 1px gray);
+}
+
+.formulario_item{
+  text-align: left;
+  margin: 10px;
+}
+
+.formulario__input{
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.formulario__boton--active{
+  padding:5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.formulario__boton--active:active{
+  background-color: darkred;
+  color: aliceblue;
+}
+
+.Tarea{
+  background-color: lightpink;
+  width: 300px;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+
+.Tarea__titulo{
+  color: aliceblue;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Tarea__item{
+  text-align: left;
+}
+
+.Tarea__label{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Tarea__boton{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: gold;
+  border: none;
+  font-weight: bold;
+}
+
+.Tarea__item--primary{
+  color: yellow;
+}
+
+.galeria{
+  background-color: lightskyblue;
+  width: 800px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.galeria__titulo{
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.galeria__imagen{
+  margin: 20px auto;
+  border-radius: 30px;
+}
+
+.alerta{
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
+.mensaje{
+  background-color: red;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+}
+
+.alerta__titulo{
+  color: gold;
+  text-align: center;
+}
+
+.alerta__mensaje{
+  font-weight: bold;
+}
