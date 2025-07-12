@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Bem</title>
+  <script src="https://kit.fontawesome.com/7fb5ff4237.js" crossorigin="anonymous"></script>
+  <title>Aplicaciones BEM</title>
 </head>
 
 <body>
+  <!-- menu de navegacion -->
+  <nav class="menu">
+    <a href="inicio" class="menu__item menu__item--primary">Home</a>
+    <a href="nosotros" class="menu__item">About us</a>
+    <a href="servicios" class="menu__item">Products</a>
+    <a href="contacto" class="menu__item">Contac us</a>
+  </nav>
+  
   <div class="contenedor">
-    <!-- menu de navegacion -->
-    <nav class="menu">
-      <a href="inicio" class="menu__item menu__item--primary">Home</a>
-      <a href="nosotros" class="menu__item">About us</a>
-      <a href="servicios" class="menu__item">Products</a>
-      <a href="contacto" class="menu__item">Contac us</a>
-    </nav>
     <!-- Tarjeta de un producto  -->
     <div class="target">
       <img src="https://picsum.photos/200" alt="imagen1" class="target__imagen">
@@ -92,7 +94,62 @@
         <td class="tabla__item">México</td>
       </tr>
     </table>
-  </div>
-</body>
 
+    <div class="tabs">
+      <div class="tabs__titulos">
+        <a href="#tab1" class="tabs__link">Español</a>
+        <a href="#tab2" class="tabs__link">Ingles</a>
+        <a href="#tab3" class="tabs__link">Italiano</a>
+      </div>
+
+      <div class="tabs__body">
+        <div id="tab1" class="tabs__ventana tabs__ventana--target">
+          <p>"Si puedes imaginarlo, puedes programarlo"</p>
+        </div>
+
+        <div id="tab2" class="tabs__ventana tabs__ventana--target">
+          <p>""If you can imagine it, you can code it.""</p>
+        </div>
+
+        <div id="tab3" class="tabs__ventana tabs__ventana--target">
+          <p>"Se puoi immaginarlo, puoi programmarlo"</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- componente de categorias de productos -->
+    <div class="categorias">
+      <label for="categoria" class="categorias__label">Elige una categoría:</label>
+      <select id="categoria" class="categorias__select">
+        <option value="camisas">Camisas</option>
+        <option value="zapatos">Zapatos</option>
+        <option value="pantalones">Pantalones</option>
+        <option value="faldas">Faldas</option>
+      </select>
+      <button class="categorias__boton categorias__boton--active">Buscar</button>
+    </div>
+
+  </div>
+  <!-- componente de pie de página -->
+  <footer class="footer">
+    <div class="footer__informacion">
+      <img src="imagenes/logo.png" alt="Logo de la empresa" class="footer__logo">
+      <p class="footer__nombre">Unity</p>
+      <div class="footer__contacto">
+        <p class="footer__texto">Email: contacto@empresa.com</p>
+        <p class="footer__texto">Tel: +57 123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer__redes">
+      <a class="footer__redes-item" href="#"><i class="fa-brands fa-facebook footer__icon"></i></a>
+      <a class="footer__redes-item" href="#"><i class="fa-brands fa-x-twitter footer__icon"></i></a>
+      <a class="footer__redes-item" href="#"><i class="fa-brands fa-instagram footer__icon"></i></a>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-copy"> 2025 Empresa. Todos los derechos reservados.</p>
+      <a href="#" class="footer__bottom-legal">Política de privacidad</a>
+      <a href="#" class="footer__bottom-legal">Términos y condiciones</a>
+    </div>
+  </footer> 
+</body>
 </html>
